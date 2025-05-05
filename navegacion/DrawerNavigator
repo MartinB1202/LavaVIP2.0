@@ -1,0 +1,44 @@
+// navigation/DrawerNavigator.js
+/**
+import React from 'react';
+import { createDrawerNavigator } from '@react-navigation/drawer';
+import Casa from '../pantallas/Casa';
+import Casa2 from '../pantallas/Usuario';
+
+
+const Drawer = createDrawerNavigator();
+
+export default function DrawerNavigator() {
+  return (
+   
+      <Drawer.Navigator>
+        <Drawer.Screen 
+          name="Casa" 
+          component={Casa} 
+          options={{
+            title: 'LavaVIP',
+            drawerLabel: 'LavaVIP'
+          }} 
+        />
+        <Drawer.Screen
+          name="Casa2"
+          component={Casa2}
+          options={{
+            title: "INICIA CACAC", // Título que aparece en el header
+                  headerTintColor: "white", // Color del texto del header
+                  headerTitleAlign: 'center', // Centra el título
+                  headerStyle: { backgroundColor: '#525fe1' } // Color de fondo del header
+          }}
+        />
+
+        <Drawer.Screen
+            name="CerrarS"
+            options={{
+                title: "Cerrar sesion"
+            }}
+        />
+      </Drawer.Navigator>
+   
+  );
+}
+ */
