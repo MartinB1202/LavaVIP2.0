@@ -4,7 +4,7 @@ import React from 'react'
 export default function estilosDArt() {
   return (
     <View>
-      <Text>estilosDArt</Text>
+      <Text>Hola a todos</Text>
     </View>
   )
 }
