@@ -14,7 +14,15 @@ export default function StackN() {
       <Stack.Screen name="TabNavigator" component={TabsNavigator} options={{
         headerShown: false
       }} />
-      <Stack.Screen name="DetalleArticulo" component={DetalleArticulo} />
+      <Stack.Screen name="DetalleArticulo" component={DetalleArticulo} options={{
+        title: "Detalles",
+        headerTintColor: 'white',
+        headerStyle:{
+          backgroundColor: '#162225'
+          
+        }
+        
+      }} />
     </Stack.Navigator>
   );
 }
