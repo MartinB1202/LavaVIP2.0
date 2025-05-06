@@ -58,8 +58,9 @@ const styles = StyleSheet.create({
     TextoBoton:{
         textAlign:'center',
         color: '00000'
-    }
+    },
 
+   
 }
 
 )
