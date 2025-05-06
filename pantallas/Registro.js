@@ -47,9 +47,10 @@ const registroUsuario = async ()=>{
         <ScrollView style={{backgroundColor:'white'}}>
        
         <LinearGradient
-        colors={['#121111', '#2E7B8C', '#214054', '#222638']}
+        colors={['#121111', '#4C4C4C', '#6A6A6A', '#828282', '#ADADAD', '#ACB6BD']}
         start={{x:1, y:1}}
         end={{x:0, y:0}}
+        
          style={styles.padre}>
          <StatusBar
                 barStyle='light-content'
