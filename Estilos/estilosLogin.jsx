@@ -1,5 +1,7 @@
 import { StyleSheet } from "react-native";
 
+
+
 const styles = StyleSheet.create({
     padre:{
         flex:1, 
@@ -56,7 +58,17 @@ const styles = StyleSheet.create({
     TextoBoton:{
         textAlign:'center',
         color: '00000'
+    },
+
+    lavaV:{
+        fontSize:75,
+        fontFamily: 'CherryCreamSoda_400Regular',
+        paddingBottom: 50
+        
     }
+
+
+    
 })
 
 export default styles;
