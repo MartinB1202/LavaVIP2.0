@@ -6,10 +6,9 @@ import { auth } from "../credenciales";
 import { LinearGradient } from "expo-linear-gradient";
 import { StatusBar } from "react-native";
 import styles from "../Estilos/estilosLogin";
+import {useFonts, CherryCreamSoda_400Regular} from '@expo-google-fonts/cherry-cream-soda'
 
-
-
-
+ 
 
 
 export default function Login(props){
@@ -28,21 +27,31 @@ const inicia = async()=>{
 
 }
 
-
-
+let [fontLoaded] = useFonts({
+    CherryCreamSoda_400Regular,
+  });
+  if(!fontLoaded){
+    return null;
+  }
 
     return (
         
           
         <LinearGradient
-        colors={['#121111', '#2E7B8C', '#214054', '#222638']}
+        colors={['#121111', '#4C4C4C', '#6A6A6A', '#828282', '#ADADAD', '#ACB6BD']}
         start={{x:1, y:1}}
         end={{x:0, y:0}}
         style={styles.padre}>
         <StatusBar
         barStyle='light-content'
         />  
+
+        <View>
+        <Text style= {styles.lavaV}>LavaVIP</Text>
+
+        </View>
            <View>
+            
                 <Image source={require('../assets/usuario2.jpg')} style={styles.profile}/>
             
             </View> 
