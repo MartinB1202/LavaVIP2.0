@@ -37,16 +37,15 @@ export default function Casa() {
 
   return (
     
-    <LinearGradient  colors={['#121111', '#2E7B8C', '#214054', '#222638']}
-            start={{x:1, y:1}}
-            end={{x:0, y:0}}
+    <LinearGradient  colors={['#121111', '#4C4C4C', '#6A6A6A', '#828282', '#ADADAD', '#ACB6BD']}
+            
             style={{flex:1}}
             >
     <View>
     <View style={styles.contenedorT}>
       <Text>Categorias</Text>
     </View>
-    <View style={{flexDirection: 'row'}}>
+    <View style={{flexDirection: 'row', marginBottom: 70} }>
   
     <FlatList data={lista}
     keyExtractor={(item)=>item.id}
@@ -71,7 +70,7 @@ const styles = StyleSheet.create({
         marginRight: 280,
         
         padding: 10,
-        shadowColor: '#000',
+        shadowColor: 'white',
         shadowOffset: {
             width: 0,
             height: 2
