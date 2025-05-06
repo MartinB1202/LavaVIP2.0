@@ -26,7 +26,7 @@ export default function TabsNavigator() {
       tabBarInactiveTintColor: 'gray',     //Color cuando NO está activo
       tabBarStyle: {
         paddingBottom: 10, // Espacio extra en toda la barra
-        height: 70,        // Altura de la barra
+        height: 60,        // Altura de la barra
         backgroundColor: '#121111', // Fondo
       },
       tabBarLabelStyle: {
