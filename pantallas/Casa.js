@@ -6,6 +6,7 @@ import appfirebase from '../credenciales';
 import { LinearGradient } from 'expo-linear-gradient';
 
 
+
 const db = getFirestore(appfirebase);
 
 
