@@ -11,14 +11,52 @@ import FontAwesome6Icon from 'react-native-vector-icons/FontAwesome6';
 import Constants from 'expo-constants'
 import { Platform } from 'react-native';
 import DetalleArticulo from '../pantallas/DetalleArticulo';
-
+import {Amiri_400Regular} from '@expo-google-fonts/amiri'
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 
 const Tab = createBottomTabNavigator();
+const Stack = createNativeStackNavigator();
+
+function StackN(){
+
+  return(
+    <Stack.Navigator >
+      
+      <Stack.Screen name='Casa' component={Casa} options={{
+        headerShown: false
+      }}/>
+
+      <Stack.Screen name='DetalleArticulo' component={DetalleArticulo} options={
+        {
+          headerShown: false
+        }
+      }/>
+  
+        
+      </Stack.Navigator>
+
+
+  )
+
+
+}
 
 
 export default function TabsNavigator() {
+
+   
+   
+
+
   return (
+    
+ 
+    
+    
+    
+    
+    
     <Tab.Navigator
     
     screenOptions={{
@@ -39,17 +77,21 @@ export default function TabsNavigator() {
       
       },
       
+      
     }}>
-      <Tab.Screen name="Casa" component={Casa} options={{
+      <Tab.Screen name="StackN" component={StackN} options={{
         tabBarIcon: ({color, size})=>(
           <Icon name='home' size={size} color={color}/>
         ),
         headerTitle: 'LAVAVIP',
         headerTitleStyle:{
           fontSize:45
+
         },
-       
+        
         title:'Inicio'
+
+        
       }} />
       <Tab.Screen name="Domicilio" component={Domicilio} options={{
         tabBarIcon: ({color, size})=>(
@@ -61,7 +103,8 @@ export default function TabsNavigator() {
         tabBarIcon: ({color, size})=>(
           <FontAwesome6Icon name='cart-shopping' size={size} color={color}/>
         ),
-        title:'Carrito'
+        title:'Carrito',
+        headerShown: false
       }} />
       <Tab.Screen name="Usuario" component={Usuario} options={{
         tabBarIcon: ({color, size})=>(
