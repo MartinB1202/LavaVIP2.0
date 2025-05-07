@@ -5,6 +5,8 @@ import { createStackNavigator } from '@react-navigation/stack';
 import { useFonts, CherryCreamSoda_400Regular} from '@expo-google-fonts/cherry-cream-soda'
 import { LinearGradient } from 'expo-linear-gradient';
 import { Platform, StatusBar } from 'react-native';
+
+
 const Stack = createStackNavigator();
 
 
