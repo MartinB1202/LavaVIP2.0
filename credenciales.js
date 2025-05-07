@@ -11,13 +11,12 @@ import { Platform } from "react-native";
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyCwJG2vj7Ow2ZOfGa1P-6CoJ1jO9P3uJ9U",
-  authDomain: "loginlavavip.firebaseapp.com",
-  projectId: "loginlavavip",
-  storageBucket: "loginlavavip.firebasestorage.app",
-  messagingSenderId: "532266405316",
-  appId: "1:532266405316:web:faaab880ac2efae5a7e891",
-  measurementId: "G-GYNV6TQ3XB"
+  apiKey: "AIzaSyBZ4hbdqV4MZGN5jeMuufI--ZXrDgBFTdY",
+  authDomain: "lavavip-699a7.firebaseapp.com",
+  projectId: "lavavip-699a7",
+  storageBucket: "lavavip-699a7.firebasestorage.app",
+  messagingSenderId: "1050773084102",
+  appId: "1:1050773084102:web:1333c2078e6f6c83e044c7"
 };
 
 // Initialize Firebase
