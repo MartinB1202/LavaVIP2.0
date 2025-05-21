@@ -10,11 +10,11 @@ const styles = StyleSheet.create({
         
        
     },
-    
+   
     profile: {
-        width:100,
-        height: 100,
-        borderRadius:50,
+        width:400,
+        height: 400,
+        
         borderColor: 'white',
         marginBottom: 50
     },
