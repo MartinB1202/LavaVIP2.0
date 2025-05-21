@@ -9,7 +9,7 @@ import Icon from 'react-native-vector-icons/Ionicons';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons'
 import FontAwesome6Icon from 'react-native-vector-icons/FontAwesome6';
 import Constants from 'expo-constants'
-import { Platform } from 'react-native';
+import { Platform, Image, View, Text } from 'react-native';
 import DetalleArticulo from '../pantallas/DetalleArticulo';
 import {Amiri_400Regular} from '@expo-google-fonts/amiri'
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
@@ -83,11 +83,21 @@ export default function TabsNavigator() {
         tabBarIcon: ({color, size})=>(
           <Icon name='home' size={size} color={color}/>
         ),
-        headerTitle: 'LAVAVIP',
+        headerTitle: () => (
+          <View style={{ flexDirection: 'row', alignItems: 'center' }}>
+            <Image
+              source={require('../assets/agua.png')}
+              style={{ width: 40, height: 40, resizeMode: 'contain', marginRight: 10 }}
+            />
+            <Text style={{ fontSize: 30, fontWeight: 'bold', color: 'black' }}>LAVAVIP</Text>
+          </View>
+        ),
+    
         headerTitleStyle:{
           fontSize:45
-
+        
         },
+        
         
         title:'Inicio'
 
