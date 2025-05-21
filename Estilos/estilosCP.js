@@ -92,6 +92,10 @@ const estilosWeb = {
     
     contenido:{
       paddingLeft: 15
+    },
+    imagen:{
+      width: 200,
+      height: 200
     }
   
   
