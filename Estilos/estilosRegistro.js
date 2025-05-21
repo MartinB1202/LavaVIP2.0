@@ -8,10 +8,15 @@ const styles = StyleSheet.create({
         
        
     },
-    
+
+    scroll: {
+        flexGrow: 1
+    },
+
+
     profile: {
-        width:100,
-        height: 100,
+        width:200,
+        height: 200,
         borderRadius:50,
         borderColor: 'white',
         marginBottom: 50
@@ -19,6 +24,7 @@ const styles = StyleSheet.create({
 
     tarjeta: {
         margin: 20,
+        
         backgroundColor: 'white',
         borderRadius: 20,
         width: '90%',
