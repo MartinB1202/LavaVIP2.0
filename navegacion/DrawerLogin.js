@@ -52,21 +52,8 @@ export default function DrawerLogin() {
           name="Registro"
           component={Registro}
           options={{
-            title: "LAVAVIP",
-            headerTintColor: "white", 
-                  headerTitleAlign: 'center',  
-                  headerStyle: { 
-                    backgroundColor: '#162225',
-                    
-                    height: 105
-                  },
-                  headerTitleStyle:{
-                    fontFamily: 'CherryCreamSoda_400Regular',
-                    fontSize: 45, 
-                    color: 'white'
-          
-                  },      
-           
+            
+                  headerShown:false
 
           }}
            // Color de fondo del header
