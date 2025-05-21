@@ -56,8 +56,10 @@ contenedor:{
       height: 200,
 
       
+    },
+    borrar:{
+    alignItems: 'flex-end',  
     }
-  
 });
 
 
