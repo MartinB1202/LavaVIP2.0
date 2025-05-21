@@ -44,7 +44,9 @@ const registroUsuario = async ()=>{
     return (
         
         
-        <ScrollView style={{backgroundColor:'white'}}>
+        <ScrollView 
+        contentContainerStyle={styles.scroll}
+        showsVerticalScrollIndicator= {false}>
        
         <LinearGradient
         colors={['#121111', '#4C4C4C', '#6A6A6A', '#828282', '#ADADAD', '#ACB6BD']}
@@ -57,7 +59,7 @@ const registroUsuario = async ()=>{
                 />
        
            <View>
-                <Image source={require('../assets/usuario2.jpg')} style={styles.profile}/>
+                <Image source={require('../assets/Lavanderia.png')} style={styles.profile}/>
             
             </View> 
             <View style={styles.tarjeta}>
