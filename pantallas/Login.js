@@ -47,12 +47,12 @@ let [fontLoaded] = useFonts({
         />  
 
         <View>
-        <Text style= {styles.lavaV}>LavaVIP</Text>
-
+        
+        <Image source={require('../assets/Lavanderia.png')} style={styles.profile}/>
         </View>
            <View>
             
-                <Image source={require('../assets/usuario2.jpg')} style={styles.profile}/>
+                
             
             </View> 
             <View style={styles.tarjeta}>
