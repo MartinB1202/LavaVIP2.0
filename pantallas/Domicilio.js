@@ -22,7 +22,7 @@ const[datosPedido, setDatosPedido] = useState([]);
 
 useFocusEffect(
   useCallback(() => {
-    const obtenerPedidos = async () => {
+     const obtenerPedidos = async () => {
       try {
         const querySnapshot = await getDocs(collection(db, 'pedidos'));
         const docs = [];
